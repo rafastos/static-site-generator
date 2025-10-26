@@ -28,3 +28,6 @@ class TestExtractMarkdownLinks(unittest.TestCase):
         matches = extract_markdown_links(text)
 
         self.assertListEqual([("first link", "https://www.first.com"), ("second link", "https://www.second.com")], matches)
+
+if __name__ == "__main__":
+    unittest.main()
